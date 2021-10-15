@@ -1,0 +1,350 @@
+body{
+ background-color: white;
+ font-family: 'Roboto', sans-serif;
+}
+.nav-container{
+    background-color:#031321;
+    box-shadow: 0px 0px 10px rgb(100, 86, 86);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+}
+nav{
+    float: right;
+}
+.nav-list{
+margin: 0; 
+padding: 0;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+}
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+    cursor: pointer;
+    
+}
+.nav-container img{
+    margin-left: 2rem;
+    height: 100px;
+    width: 100px;
+    float: left;
+   }
+.nav-item a{
+    text-decoration: none;
+    padding: 0 20px;
+    color:#2196f3 ;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.nav-item a:hover{
+    color: #255784;
+    background:#2196f3 ;
+    box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3;
+    transition-delay: 0.75s;
+}
+.nav-item a span{
+    position: absolute;
+    display: block;
+}
+.nav-item a span:nth-child(1){
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg,transparent,#2196f3);
+ 
+}
+.nav-item a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.nav-item a span:nth-child(3){
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(270deg,transparent,#2196f3);
+ 
+}
+.nav-item a:hover span:nth-child(3){
+    right: 100%;
+    transition: 0.75s;
+    transition-delay: 0.25s;
+}
+.nav-item a span:nth-child(2){
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg,transparent,#2196f3);
+ 
+}
+.nav-item a:hover span:nth-child(2){
+    top: 100%;
+    transition: 0.75s;
+    transition-delay: 0.05s;
+}
+.nav-item a span:nth-child(4){
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg,transparent,#2196f3);
+ 
+}
+.nav-item a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 0.65s;
+    transition-delay: 0.5s;
+}
+.bar{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: none;
+    float: right;
+}
+/* navigation part ....................................................*/
+
+
+
+
+
+
+
+.heading{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+    color: #252839;
+}
+.moto{
+    color:#252839 ;
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 65px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    background: #0c002b;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.container:hover .card{
+    opacity: 0.2;
+}
+.container .card:hover{
+    opacity: 1;
+}
+.container .card::before{
+    position: absolute;
+    content: '';
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+.container .card .content{
+    padding: 30px;
+    text-align: center;
+}
+.container .card .content h2{
+    position: absolute;
+    right: 30px;
+    font-size: 64px;
+    font-weight: 800;
+    color: #1779ff;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+.container .card:hover .content h2{
+    opacity: 1;
+    transform: translateY(-110px);
+}
+.container .card .content h3{
+    position: relative;
+    font-size: 24px;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.container .card .content p{
+    position: relative;
+    font-size: 1em;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    font-weight: 300;
+    transition: 0.5s;
+}
+.container .card:hover .content h3,
+.container .card:hover .content p 
+{
+    opacity: 1;
+}
+.container .card .content a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #fff;
+    color: #0c002b; 
+    text-decoration: none;
+    font-weight: 600
+}
+.container .card span{
+     transition: 0.5;
+     opacity: 0;
+}
+.container .card:hover span{
+    opacity: 1;
+}
+.container .card span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,transparent, #1779ff );
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+    0%{
+         transform:  translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.container .card span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent, #1779ff );
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2{
+    0%{
+         transform:  translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+.container .card span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left,transparent, #1779ff );
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+    0%{
+         transform:  translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.container .card span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top,transparent, #1779ff );
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4{
+    0%{
+         transform:  translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
+
+/* responsive part ------------------------------------------------------*/
+@media(max-width:991px){
+    .nav-container{
+        padding: 0 20px;
+    }
+    .bar{
+        display: block;
+        line-height: 100px;
+    }
+    nav{
+        position: absolute ;
+        width: 100%;
+        height: 306px;
+        background:#031321 ;
+        top: 100px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    nav.active{
+        left: 0;
+    }
+    .nav-list{
+        display: block;
+        text-align: center; 
+    }
+    .nav-item{
+        margin-right: 0;
+    }
+    .nav-item a{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .moto{
+        padding: 0;
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 35px;
+    }
+    
+}
+/* responsive part ------------------------------------------------------*/

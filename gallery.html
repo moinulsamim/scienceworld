@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65b3b0b74f.js" crossorigin="anonymous"></script>
+    
+    <title>Science World</title>
+</head>
+<body>
+    <!-- header section,menu part -->
+    <header class="nav-container">
+        <img src="img/logo.png" alt="logo">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="planet.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Planets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="particle.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Particles
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Space Gallery
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="bar"><i class="fas fa-bars"></i></div>
+    </header>
+    
+    <!-- header section,menu part -->
+    <h2 class="greet">
+        Welcome <br> to Space Image Gallery!!
+    </h2>
+
+
+
+    <!-- gallery section-------------------------------------------------- -->
+    <div class="full-img" id="fullImgBox">
+        <img src="spaceg/img1.jpg" alt="" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="spaceg/img1.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img2.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img3.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img4.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img5.jpeg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img6.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img7.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img8.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img9.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img10.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img11.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img12.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img13.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img14.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img15.jpg " onclick="openFullImg(this.src)">
+        <img src="spaceg/img16.jpg " onclick="openFullImg(this.src)">
+    </div>
+    <!-- gallery section-------------------------------------------------- -->
+    
+
+
+
+    <!-- js part -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.bar').click(function(){
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex"; 
+            fullImg.src = pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+
+    </script>
+    <!-- js part -->
+</body>
+</html>

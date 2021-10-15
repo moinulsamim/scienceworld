@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65b3b0b74f.js" crossorigin="anonymous"></script>
+    
+    <title>Science World</title>
+</head>
+<body>
+    <!-- header section,menu part -->
+    <header class="nav-container">
+        <img src="img/logo.png" alt="logo">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="planet.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Planets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="particle.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Particles
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Space Gallery
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="bar"><i class="fas fa-bars"></i></div>
+    </header>
+    
+    <!-- header section,menu part -->
+
+    <section>
+        <h1 class="heading" >Welcome <br>to Science World!! </h1>
+    </section>
+    <p class="moto">
+        Here we will learn about 2 major topics of science: Planets & Particles. And there is a Space Gallery.
+    </p>
+
+    <div class="container">
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>01</h2>
+                <h3>Planets</h3>
+                <p>In this page we will learn about the planets. Click on read now 
+                    to read this page.
+                </p>
+                <a href="planet.html">Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>02</h2>
+                <h3>Particles</h3>
+                <p>In this page we will learn about the particles. Click on read now 
+                    to read this page.
+                </p>
+                <a href="particle.html">Read Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>03</h2>
+                <h3>Space Gallery</h3>
+                <p>In this gallery we will see some amazing space photos.Click on
+                    visit now to visit this gallery.
+                </p>
+                <a href="gallery.html">Visit Now</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- js part -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.bar').click(function(){
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+</html>
